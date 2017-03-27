@@ -1,0 +1,23 @@
+﻿<ion-view view-title="Login" hide-nav-bar="true">
+<ion-header-bar>
+    <h1 class="title">Login</h1>
+    </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label stacked>Username
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <label stacked>Password
+          <input type="password" ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="button" ui-sref="app.main">Log in</button>
+          </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="button" ng-click="modal.show()">Register</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
